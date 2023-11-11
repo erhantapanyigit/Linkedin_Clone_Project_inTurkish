@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkIn.com - Türkçe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Ara" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="images/home.png" /> <span>Ana Sayfa</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" /> <span>Benim Ağım</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/jobs.png" /> <span>İş İlanları</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" /> <span>Mesajlar</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" /> <span>Bildirimler</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="images/erhan1.jpg"
+            class="nav-profile-img"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
+      <!-- --------------- profil-drop-down-menu---------- -->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/erhan1.jpg" />
+            <div> 
+              <h3>Erhan Tapanyigit</h3>
+              <a href="profile.html">Profilinizi Görüntüleyin</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png" />
+            <p>Geribildirim Ver</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png" />
+            <p>Ayarlar ve Gizlilik</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png" />
+            <p>Yardım ve Destek</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.png" />
+            <p>Görünüm ve Erişilebilirlik</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png" />
+            <p>Çıkış Yap</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- -------------- navbar kapanış-------- -->
+    <!-- sidebar -->
+    <div class="container">
+      <!-- -------sol-sidebar------------ -->
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="images/cover-pic.png" width="100%" />
+          <div class="sidebar-profile-info">
+            <img src="images/erhan1.jpg" />
+            <h1>Erhan Tapanyigit</h1>
+            <h3>Apple'da Yazılım Geliştirme Uzmanı</h3>
+            <ul>
+              <li>Profil Görüntülenme Sayısı<span>648</span></li>
+              <li>Mesajlar<span>26</span></li>
+              <li>Bağlantılar<span>500+</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href="#"><img src="images/items.png" /> Ürünlerim</a>
+            <a href="#"><img src="images/premium.png" /> Premium'u Deneyin</a>
+          </div>
+        </div>
+
+        <div class="sidebar-activity" id="sidebarActivity">
+          <h3>SON</h3>
+          <a href="#"><img src="images/recent.png" /> Web Geliştirme</a>
+          <a href="#"><img src="images/recent.png" /> Kullanıcı Arayüzü</a>
+          <a href="#"><img src="images/recent.png" /> Çevrimiçi Eğitim</a>
+          <a href="#"><img src="images/recent.png" /> Çevrimiçi Öğrenme</a>
+          <a href="#"><img src="images/recent.png" /> Daha İyi Kodlama</a>
+          <a href="#"><img src="images/recent.png" /> Grup Öğrenme</a>
+          <h3>GRUPLAR</h3>
+          <a href="#"><img src="images/group.png" /> Web Tasarım Grubu</a>
+          <a href="#"><img src="images/group.png" /> HTML ve CSS Öğrenenler</a>
+          <a href="#"
+            ><img src="images/group.png" /> Python ve JavaScript Grubu</a
+          >
+          <a href="#"><img src="images/group.png" /> Kodlama Çevrimiçi Öğren</a>
+          <h3>ETİKETLER</h3>
+          <a href="#"><img src="images/hashtag.png" /> Website geliştirme</a>
+          <a href="#"><img src="images/hashtag.png" /> Kullanıcı Arayüzü</a>
+          <a href="#"><img src="images/hashtag.png" /> Eticaret</a>
+          <div class="discover-more-link">
+            <a href="">Daha Fazlasını Keşfedin</a>
+          </div>
+        </div>
+
+        <p id="showMoreLink" onclick="toggleActivity()">
+          Daha Fazla Göster <b>+</b>
+        </p>
+      </div>
+      <!-- -----------------ana-içerik------------ -->
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="images/erhan1.jpg" />
+            <textarea rows="2" placeholder="Bir gönderi yazın"></textarea>
+          </div>
+          <div class="create-post-links">
+            <li><img src="images/photo.png" />Fotoğraf</li>
+            <li><img src="images/video.png" />Video</li>
+            <li><img src="images/event.png" />Etkinlik</li>
+            <li>Gönder</li>
+          </div>
+        </div>
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sırala: <span>En yeni <img src="images/down-arrow.png" /></span>
+          </p>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/mark11.jpg" />
+            <div>
+              <h1>Mark Zuckerbeg</h1>
+              <small>Facebook'ta CEO</small>
+              <small>38 dakika önce</small>
+            </div>
+          </div>
+          <p>
+            Her web sitesinin başarısı, arama motoru optimizasyonu ve dijital
+            pazarlama stratejisine bağlıdır. Eğer tüm büyük arama motorlarının
+            ilk sayfasında yer alıyorsanız, rakiplerinizin önündesiniz demektir.
+          </p>
+          <img src="images/seo1.jpg" width="100%" />
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Elon Musk ve diğer 75 kişi</span>
+            </div>
+            <div>
+              <span>22 yorum &middot; 40 paylaşım</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/erhan1.jpg" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Beğen</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Yorum Yap</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Paylaş</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Gönder</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/tim2.jpeg" />
+            <div>
+              <h1>Tim Cook</h1>
+              <small>Apple'da CEO</small>
+              <small>2 saat önce</small>
+            </div>
+          </div>
+          <p>
+            Her web sitesinin başarısı, arama motoru optimizasyonu ve dijital
+            pazarlama stratejisine bağlıdır. Eğer tüm büyük arama motorlarının
+            ilk sayfasında yer alıyorsanız, rakiplerinizin önündesiniz demektir.
+          </p>
+          <img src="images/seo2.jpg" width="100%" />
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Elon Musk ve diğer 75 kişi</span>
+            </div>
+            <div>
+              <span>22 yorum &middot; 40 paylaşım</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/erhan1.jpg" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Beğen</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Yorum Yap</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Paylaş</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Gönder</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/elon2.jpg" />
+            <div>
+              <h1>Elon Musk</h1>
+              <small>SpaceX'de CEO</small>
+              <small>3 saat önce</small>
+            </div>
+          </div>
+          <p>
+            Bu platformu X'e dönüştürmek için <strong>Linda Yaccarino</strong> ile çalışmayı sabırsızlıkla bekliyordum.Yaccarino platformun ticari operasyonlara odaklanıyor ve bir takım köklü değişiklikler yapmayı planlıyor.
+          </p>
+          <img src="images/linda1.webp" width="100%" />
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Mark Zuckerberg ve diğer 75 kişi</span>
+            </div>
+            <div>
+              <span>22 yorum &middot; 40 paylaşım</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/erhan1.jpg" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Beğen</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Yorum Yap</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Paylaş</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Gönder</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/bill1.jpg" />
+            <div>
+              <h1>Bill Gates</h1>
+              <small>Microsoft'ta Kurucu</small>
+              <small>1 gün önce</small>
+            </div>
+          </div>
+          <p>
+            Her web sitesinin başarısı, arama motoru optimizasyonu ve dijital
+            pazarlama stratejisine bağlıdır. Eğer tüm büyük arama motorlarının
+            ilk sayfasında yer alıyorsanız, rakiplerinizin önündesiniz demektir.
+          </p>
+          <img src="images/microsoft-openai.jpg" width="100%" />
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Elon Musk ve diğer 75 kişi</span>
+            </div>
+            <div>
+              <span>22 yorum &middot; 40 paylaşım</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/erhan1.jpg" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Beğen</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Yorum Yap</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Paylaş</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Gönder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------sağ-sidebar--------------- -->
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="images/more.png" class="info-icon" />
+          <h3>Trend Haberler</h3>
+          <a href="#">Danimarka'da Yetenekli İşgücüne Yüksek Talep</a>
+          <span>2 saat önce &middot; 10.934 okuyucu</span>
+
+          <a href="#">Kariyer ve Network Arasındaki Köprü</a>
+          <span>5 saat önce &middot; 1.552 okuyucu</span>
+
+          <a href="#"
+            >Almanya Nitelikli İş Gücü Yasası Kapsamındaki Meslekler</a
+          >
+          <span>19 saat önce &middot; 27.290 okuyucu</span>
+
+          <a href="#">Daha Fazla İstihdam, Daha Fazla Güven mi Demek?</a>
+          <span>1 gün önce &middot; 8.208 okuyucu</span>
+
+          <a href="#">Jeff Bezos Dünyanın En Zenginleri Listesinde Yerini Korudu.</a>
+          <span>3 gün önce &middot; 4.205 okuyucu</span>
+
+          <a href="" class="read-more-link">Daha Fazla Haber</a>
+        </div>
+
+        <div class="sidebar-ad">
+          <small>Reklam &middot; &middot; &middot;</small>
+          <p>Yazılım Geliştirmenin Önemli Adımları</p>
+          <div>
+            <img src="images/erhan1.jpg" alt="Kullanıcı 1 Resmi" />
+            <img src="images/logo.png" alt="LinkIn Logo" />
+          </div>
+          <b>LinkIn'de Marka Değerlendirmesi</b>
+          <a href="#" class="ad-link">Daha Fazla Bilgi Edinin</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+          <a href="#">Hakkında</a>
+          <a href="#">Erişilebilirlik</a>
+          <a href="#">Yardım Merkezi</a>
+          <a href="#">Gizlilik Politikası</a>
+          <a href="#">Reklam</a>
+          <a href="#">Uygulamayı İndir</a>
+          <a href="#">Daha Fazla</a>
+
+          <div class="copyright-msg">
+            <img src="images/logo.png" />
+            <p>Linkedup &#169; 2023. Tüm Hakları saklıdır.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
